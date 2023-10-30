@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="short icon" href="./assets/img/log.jpg">
+  <title>Expense Control</title>
+</head>
+
+<body>
+  <img class="fondo1" src="./assets/img/fondo3.avif" alt="">
+  <div class="container">
+    <h1 class="tituloUno">EXPENSE CONTROL</h1>
+    <div class="logo">
+      <img class="logotipo" src="./assets/img/log.jpg" alt="Logo">
+    </div>
+    <div id="register-form">
+      <h2 class="tituloDos">Registrarse</h2>
+      <div id="container-username-form" style="display: grid; grid-template-columns: auto auto; gap: 10px;">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" placeholder="Nombre de usuario">
+      </div>
+      <div id="container-username-form" style="display: grid; grid-template-columns: auto auto; gap: 10px;">
+        <label for="username">Contraseña:</label>
+      <input type="password" id="password" placeholder="Contraseña">
+    </div>
+      <button onclick="registerUser()">Registrarse</button>
+      <button class="login-button" onclick="loginButtonClick()"> ¿Ya tienes una cuenta? </button>
+    </div>
+    <div id="login-form" style="display: none;">
+      <h2>Iniciar Sesión</h2>
+      <input type="text" id="login-username" placeholder="Nombre de usuario">
+      <input type="password" id="login-password" placeholder="Contraseña">
+      <button onclick="loginUser()">Iniciar Sesión</button>
+    </div>
+    <div id="menu-principal" style="display: none;">
+      <h1 class="tituloUno">Bienvenido a su control de gastos</h1>
+      <button onclick="registrarGasto()">Registrar un gasto</button>
+      <button id="listar" onclick="listarGastos()">Ver gastos</button>
+      <button id="cerrarSesion">Cerrar Sesion</button>
+    </div>
+    <div id="menu-crear-gasto" style="display: none;">
+      <h2>Seleccione su categoría de gasto:</h2>
+      <select name="categoria" id="categorias">
+        <option value="Hospedaje">Hospedaje</option>
+        <option value="Transporte">Transporte</option>
+        <option value="Comida">Comida</option>
+        <option value="diversion">Diversion</option>
+        <option value="Extras">Extras</option>
+      </select>
+      <input type="text" id="descripcion" placeholder="Descripción del gasto">
+      <input type="text" id="valor" placeholder="Valor del gasto">
+      <button onclick="registrarGastoButton()">Registrar gasto</button>
+      <button id="regresar" onclick="regresarMenuDesdeRegistroGastos()">Regresar</button>
+    </div>
+    <div id="menu-listar-gastos" style="display: none;">
+        <div id="contenedor-tabla">
+          <table>
+            <thead>
+              <tr>
+                <th>Tipo de gasto</th>
+                <th>Descripción del gasto</th>
+                <th>Valor del gasto</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <div id="botones">
+            <button id="registro-nuevo">Registrar nuevo gasto</button>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

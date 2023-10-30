@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #55c9c3;
+}
+.fondo1{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 70px;
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+.logotipo{
+    width: 300px;
+    height: 270px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+   
+    padding: 0px;
+    margin: 8px 0 ;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(36, 128, 220);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    cursor: pointer;
+}
+.tituloUno{
+  color: rgb(36, 128, 220);
+}
+.tituloDos{
+  position: relative;
+  top: -20px;
+}
+#username{
+  position: relative;
+  left: -30%;
+  top:  -15px;
+}
+#password{
+    width: 96%;
+    position: relative;
+    left: -25%;
+    top: -15px;
+}
+
+button:hover {
+    background-color: rgb(36, 128, 220);
+}
+
+#menu-principal {
+    margin-top: 5px;
+}
+
+#menu-crear-gasto{
+    margin-top: 20px;
+}
+
+
+.login-button{
+    margin-top: 5px;
+}
+
+#contenedor-tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 80%; /* Ajusta el ancho de la tabla */
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+  
+  th, td {
+    border: 1px solid #ccc; /* Agrega bordes */
+    padding: 8px;
+    text-align: center; /* Centra el contenido de las celdas */
+  }
+  
+  #username{
+    text-align: center; /* Centra el contenido de las celdas */
+   
+  }
+  #password{
+    text-align: center; /* Centra el contenido de las celdas */
+   
+  }
+  #contenedor-tabla{
+    display: flex;
+    flex-direction: column;
+  }
+  #botones{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  #cerrarSesion{
+    position: relative;
+    top: 10px;
+  }
+  #listar{
+    margin-top: 7px;
+  }
+  #regresar{
+    margin-top: 7px;
+  }
+
+  #categorias {
+    position:relative;
+    width: 400px; 
+    top: -15px;
+    height: 30px; /* Altura del select */
+    font-size: 18px; /* Tamaño de fuente para el select */
+  }
+  
+  #categorias option {
+    font-size: 20px; /* Tamaño de fuente para las opciones del select */
+  }
